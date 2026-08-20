@@ -5,23 +5,23 @@ const exercises = [
         muscleGroup: "chest"
     },
     {
-        name: "Incline Dumbell Press",
+        name: "Incline Dumbbell Press",
         muscleGroup: "chest"
     },
     {
         name: "Overhead Press",
-        muscleGroup: "chest"
-    },
-    {
-        name: "Tricep Pushdowns",
-        muscleGroup: "triceps"
-    },
-    {
-        name: "Lateral Raises",
         muscleGroup: "delts"
     },
     {
-        name: "Overhead Tricep Extensions",
+        name: "Tricep Pushdown",
+        muscleGroup: "triceps"
+    },
+    {
+        name: "Lateral Raise",
+        muscleGroup: "delts"
+    },
+    {
+        name: "Overhead Tricep Extension",
         muscleGroup: "triceps"
     },
     {
@@ -29,27 +29,27 @@ const exercises = [
         muscleGroup: "back"
     },
      {
-        name: "Deadlifts",
+        name: "Deadlift",
         muscleGroup: "back"
     },
     {
-        name: "Barbell Rows",
+        name: "Barbell Row",
         muscleGroup: "back"
     },
     {
-        name: "Seated Cable Rows",
+        name: "Seated Cable Row",
         muscleGroup: "back"
     },
     {
-        name: "Face Pulls",
+        name: "Face Pull",
         muscleGroup: "back"
     },
      {
-        name: "Hammer Curls",
+        name: "Hammer Curl",
         muscleGroup: "biceps"
     },
     {
-        name: "Supinated Dumbell Curls",
+        name: "Supinated Dumbbell Curl",
         muscleGroup: "biceps"
     }
 
