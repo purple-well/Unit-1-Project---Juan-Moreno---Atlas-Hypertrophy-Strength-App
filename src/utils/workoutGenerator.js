@@ -6,8 +6,13 @@ function generateWorkout(userInformation) {
             day: i + 1
         };
 
-        trainingPlan.push(day);
+        if ((i + 1) % 4 === 0) {
+            day.rest = true;
+        } else {
+            day.exercises = [];
+        }
 
+        trainingPlan.push(day);
     }
 
     return trainingPlan;
