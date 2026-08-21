@@ -1,4 +1,4 @@
-const UserInformationForm = () => {
+const UserInformationForm = ({ userInformationForm, setUserInformation }) => {
     return (
         <form>
             <label htmlFor="experience">Training Experience</label>
