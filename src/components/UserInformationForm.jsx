@@ -1,4 +1,4 @@
-const UserInformationForm = ({ userInformation, setUserInformation }) => {
+const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit }) => {
 
     const handleChange = (event) => {
         setUserInformation({
@@ -8,7 +8,7 @@ const UserInformationForm = ({ userInformation, setUserInformation }) => {
     };
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <label htmlFor="experience">Training Experience</label>
             <select
 
