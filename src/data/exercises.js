@@ -1,58 +1,37 @@
-const exercises = [
-
+const workoutTemplates = [
     {
-        name: "Bench Press",
-        muscleGroup: "chest"
-    },
-    {
-        name: "Incline Dumbbell Press",
-        muscleGroup: "chest"
-    },
-    {
-        name: "Overhead Press",
-        muscleGroup: "delts"
+        type: "push",
+        exercises: [
+            "Bench Press",
+            "Overhead Press",
+            "Tricep Pushdown",
+            "Lateral Raise",
+            "Incline Dumbbell Press",
+            "Overhead Tricep Extension"
+        ]
     },
     {
-        name: "Tricep Pushdown",
-        muscleGroup: "triceps"
+        type: "pull",
+        exercises: [
+            "Chest Supported Row",
+            "Lat Pulldown",
+            "Hammer Curl",
+            "Supinated Dumbbell Curl",
+            "Face Pull",
+            "Lat Pullover"
+        ]
     },
     {
-        name: "Lateral Raise",
-        muscleGroup: "delts"
-    },
-    {
-        name: "Overhead Tricep Extension",
-        muscleGroup: "triceps"
-    },
-    {
-        name: "Lat Pulldown",
-        muscleGroup: "back"
-    },
-     {
-        name: "Deadlift",
-        muscleGroup: "back"
-    },
-    {
-        name: "Barbell Row",
-        muscleGroup: "back"
-    },
-    {
-        name: "Seated Cable Row",
-        muscleGroup: "back"
-    },
-    {
-        name: "Face Pull",
-        muscleGroup: "back"
-    },
-     {
-        name: "Hammer Curl",
-        muscleGroup: "biceps"
-    },
-    {
-        name: "Supinated Dumbbell Curl",
-        muscleGroup: "biceps"
+        type: "legs",
+        exercises: [
+            "Barbell Squat",
+            "Romanian Deadlift",
+            "Leg Press",
+            "Leg Extension",
+            "Leg Curl",
+            "Calf Raise"
+        ]
     }
+];
 
-]
-
-export default exercises;
+export default workoutTemplates;

@@ -8,7 +8,16 @@ function WorkoutDisplay({ trainingPlan }) {
                     {day.rest ? (
                         <p>Rest Day</p>
                     ) : (
-                        <p>Workout Day</p>
+                        <div>
+                            {day.exercises.map((exercise) => (
+                                <div key={exercise.name}>
+                                    <h3>{exercise.name}</h3>
+                                    <p>
+                                        {exercise.sets} sets × {exercise.reps} reps
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     )}
                 </div>
             ))}
