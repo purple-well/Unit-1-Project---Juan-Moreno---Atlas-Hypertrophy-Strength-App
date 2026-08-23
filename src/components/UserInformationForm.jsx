@@ -16,6 +16,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
                 name="experience"
                 value={userInformation.experience}
                 onChange={handleChange}
+                required
             >
                 <option value="">Select Training Experience</option>
                 <option value="beginner">Beginner</option>
@@ -29,6 +30,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
                 name="goal"
                 value={userInformation.goal}
                 onChange={handleChange}
+                required
             >
 
                 <option value="">Select Goal</option>
@@ -46,6 +48,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
                 placeholder="Enter Age"
                 value={userInformation.age}
                 onChange={handleChange}
+                required
             />
 
             <label htmlFor="weight">Weight in lbs</label>
@@ -58,6 +61,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
                 placeholder="Enter Weight"
                 value={userInformation.weight}
                 onChange={handleChange}
+                required
             />
 
             <label htmlFor="workoutTime">
@@ -68,6 +72,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
                 name="workoutTime"
                 value={userInformation.workoutTime}
                 onChange={handleChange}
+                required
             >
                 <option value="">Select Workout Time</option>
                 <option value="30 minutes">30 Minutes</option>

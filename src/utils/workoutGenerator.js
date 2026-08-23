@@ -11,11 +11,17 @@ function generateWorkout(userInformation) {
     let reps;
 
     if (userInformation.goal === "strength") {
-        sets = 4;
         reps = 5;
     } else {
-        sets = 3;
         reps = 10;
+    }
+
+    if (userInformation.experience === "beginner") {
+        sets = 2;
+    } else if (userInformation.experience === "intermediate") {
+        sets = 3;
+    } else {
+        sets = 4;
     }
 
     let exerciseCount;
