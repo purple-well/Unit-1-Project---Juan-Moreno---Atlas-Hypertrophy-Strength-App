@@ -1,21 +1,35 @@
 import UserInformationForm from "./components/UserInformationForm";
 import WorkoutDisplay from "./components/WorkoutDisplay";
 import generateWorkout from "./utils/workoutGenerator.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [userInformation, setUserInformation] = useState(() => {
+    const savedInformation = localStorage.getItem("userInformation");
 
-  const [userInformation, setUserInformation] = useState({
+    if (savedInformation) {
+      return JSON.parse(savedInformation);
+    }
 
-    experience: "",
-    goal: "",
-    age: "",
-    weight: "",
-    workoutTime: ""
+    return {
 
+      experience: "",
+      goal: "",
+      age: "",
+      weight: "",
+      workoutTime: ""
+
+    };
   });
 
   const [trainingPlan, setTrainingPlan] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "userInformation",
+      JSON.stringify(userInformation)
+    );
+  }, [userInformation]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,21 +40,35 @@ function App() {
 
   };
 
-  return (
+  const handleClearInformation = () => {
+    const emptyUserInformation = {
+      experience: "",
+      goal: "",
+      age: "",
+      weight: "",
+      workoutTime: ""
+    };
 
+    setUserInformation(emptyUserInformation);
+    setTrainingPlan([]);
+    localStorage.removeItem("userInformation");
+  };
+
+  return (
     <>
       <UserInformationForm
 
         userInformation={userInformation}
         setUserInformation={setUserInformation}
         handleSubmit={handleSubmit}
+        handleClearInformation={handleClearInformation}
 
       />
 
-      <WorkoutDisplay 
-      
-      trainingPlan={trainingPlan}
-      
+      <WorkoutDisplay
+
+        trainingPlan={trainingPlan}
+
       />
 
     </>

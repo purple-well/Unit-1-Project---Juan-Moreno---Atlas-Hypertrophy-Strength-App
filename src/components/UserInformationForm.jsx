@@ -1,4 +1,4 @@
-const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit }) => {
+const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit, handleClearInformation }) => {
 
     const handleChange = (event) => {
         setUserInformation({
@@ -83,6 +83,10 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
 
             <button type="submit">
                 Generate Workout
+            </button>
+
+            <button type="button" onClick={handleClearInformation}>
+                Clear Information
             </button>
 
         </form>

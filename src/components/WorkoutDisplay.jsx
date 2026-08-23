@@ -13,7 +13,7 @@ function WorkoutDisplay({ trainingPlan }) {
                                 <div key={exercise.name}>
                                     <h3>{exercise.name}</h3>
                                     <p>
-                                        {exercise.sets} sets × {exercise.reps} reps
+                                        {exercise.sets} sets x {exercise.reps} reps
                                     </p>
                                 </div>
                             ))}
