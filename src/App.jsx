@@ -56,21 +56,26 @@ function App() {
 
   return (
     <>
-      <UserInformationForm
+      <header>
+        <h1>Atlas Hypertrophy & Strength</h1>
+      </header>
 
-        userInformation={userInformation}
-        setUserInformation={setUserInformation}
-        handleSubmit={handleSubmit}
-        handleClearInformation={handleClearInformation}
+      <main>
+        <UserInformationForm
 
-      />
+          userInformation={userInformation}
+          setUserInformation={setUserInformation}
+          handleSubmit={handleSubmit}
+          handleClearInformation={handleClearInformation}
 
-      <WorkoutDisplay
+        />
 
-        trainingPlan={trainingPlan}
+        <WorkoutDisplay
 
-      />
+          trainingPlan={trainingPlan}
 
+        />
+      </main>
     </>
 
   );

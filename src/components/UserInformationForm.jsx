@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit, handleClearInformation }) => {
 
     const handleChange = (event) => {
@@ -81,13 +83,13 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
             </select>
 
 
-            <button type="submit">
+            <Button type="submit">
                 Generate Workout
-            </button>
+            </Button>
 
-            <button type="button" onClick={handleClearInformation}>
+            <Button type="button" onClick={handleClearInformation}>
                 Clear Information
-            </button>
+            </Button>
 
         </form>
     );
