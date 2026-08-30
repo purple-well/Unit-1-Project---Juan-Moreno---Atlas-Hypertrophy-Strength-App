@@ -1,4 +1,5 @@
 import ExerciseItem from "./ExerciseItem";
+import "./WorkoutDisplay.css";
 
 function WorkoutDisplay({ trainingPlan }) {
     return (

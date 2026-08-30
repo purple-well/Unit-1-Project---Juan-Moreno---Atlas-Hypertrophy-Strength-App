@@ -56,8 +56,8 @@ function GeneratorPage() {
 
     return (
         <>
-            <header>
-                <h1>Atlas Hypertrophy & Strength</h1>
+            <header className="generator-page">
+                <h1 className="generator-title">Atlas Hypertrophy & Strength</h1>
             </header>
 
             <main>
