@@ -18,10 +18,8 @@
 .hero-background {
     min-height: 100vh;
     background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-        ),
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
         url("../assets/hero-background.jpg");
 
     background-size: cover;
@@ -51,4 +49,24 @@
 .generator-link {
     display: inline-block;
     margin-top: 100px;
+}
+
+.app-anywhere {
+    padding: 80px 40px;
+}
+
+.showcase-images {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.showcase-main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.introduction {
+   padding: 30px 60px;
+
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import atlasWordmark from "../assets/atlas-logo-wordmark.svg";
+import appFunctionality from "../assets/app-functionality.avif";
 import "./HomePage.css";
 
 function HomePage() {
@@ -29,14 +30,22 @@ function HomePage() {
             </div>
 
             <section className="app-preview">
+            <h2 className="introduction">Atlas Hypertrophy & Strength: Your Smart Training Guide</h2>
 
 
 
+           
             </section>
 
             <section className="app-anywhere" >
+            <div className="showcase-images">
 
-
+            <img
+                className="showcase-main-image"
+                src={appFunctionality}
+                alt="athlete image"
+            />
+            </div>
 
             </section>
 
