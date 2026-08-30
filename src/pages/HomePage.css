@@ -40,6 +40,19 @@
 .hero {
     padding: 150px clamp(30px, 10vw, 200px);
     color: white;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero p {
@@ -67,6 +80,16 @@
 }
 
 .introduction {
-   padding: 30px 60px;
+    padding: 30px 60px;
 
+}
+
+.generator-link {
+    transition: background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.generator-link:hover {
+    background-color: #d9d9d9;
+    transform: translateY(-2px);
 }
