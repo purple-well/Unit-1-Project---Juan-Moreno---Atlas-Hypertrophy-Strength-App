@@ -27,6 +27,39 @@ function HomePage() {
                     </Link>
                 </section>
             </div>
+
+            <section className="app-preview">
+
+
+
+            </section>
+
+            <section className="app-anywhere" >
+
+
+
+            </section>
+
+            <section className="how-it-works" >
+
+
+
+            </section>
+
+            <section className="calendar-feature">
+
+
+
+            </section>
+
+            <section className="call-to-action">
+
+
+
+            </section>
+
+
+
         </main>
     );
 }
