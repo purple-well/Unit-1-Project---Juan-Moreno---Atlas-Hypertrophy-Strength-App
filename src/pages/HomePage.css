@@ -17,9 +17,12 @@
 
 .hero-background {
     min-height: 100vh;
+
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 80%,
+            rgba(255, 255, 255, 1) 100%),
         url("../assets/hero-background.jpg");
 
     background-size: cover;
@@ -92,4 +95,60 @@
 .generator-link:hover {
     background-color: #d9d9d9;
     transform: translateY(-2px);
+}
+
+.how-it-works {
+    padding: 80px 40px;
+    color: white
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: black
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.how-it-works-card {
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #1d1d1d;
+    text-align: center;
+}
+
+.how-it-works-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.how-it-works-card h3 {
+    margin-top: 25px;
+}
+
+.how-it-works-card p {
+    line-height: 1.6;
+}
+
+.calendar-feature {
+    padding: 80px 40px;
+}
+
+.calendar-showcase {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.calendar-integration {
+    display: block;
+    width: 100%;
+    height: auto;
 }
