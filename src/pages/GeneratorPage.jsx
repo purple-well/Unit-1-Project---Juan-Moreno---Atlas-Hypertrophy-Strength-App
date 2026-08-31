@@ -2,6 +2,7 @@ import UserInformationForm from "../components/UserInformationForm";
 import WorkoutDisplay from "../components/WorkoutDisplay";
 import generateWorkout from "../utils/workoutGenerator.js";
 import { useEffect, useState } from "react";
+import "./GeneratorPage.css";
 
 function GeneratorPage() {
     const [userInformation, setUserInformation] = useState(() => {
@@ -55,28 +56,28 @@ function GeneratorPage() {
     };
 
     return (
-        <>
-            <header className="generator-page">
-                <h1 className="generator-title">Atlas Hypertrophy & Strength</h1>
-            </header>
+            <>
+                <header className="generator-page">
+                    <h1 className="generator-title">Atlas Hypertrophy & Strength</h1>
+                </header>
 
-            <main>
-                <UserInformationForm
+                <main>
+                    <UserInformationForm
 
-                    userInformation={userInformation}
-                    setUserInformation={setUserInformation}
-                    handleSubmit={handleSubmit}
-                    handleClearInformation={handleClearInformation}
+                        userInformation={userInformation}
+                        setUserInformation={setUserInformation}
+                        handleSubmit={handleSubmit}
+                        handleClearInformation={handleClearInformation}
 
-                />
+                    />
 
-                <WorkoutDisplay
+                    <WorkoutDisplay
 
-                    trainingPlan={trainingPlan}
+                        trainingPlan={trainingPlan}
 
-                />
-            </main>
-        </>
+                    />
+                </main>
+            </>
 
     );
 }

@@ -1,4 +1,5 @@
 import Button from "./Button";
+import "./UserInformationForm.css";
 
 const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit, handleClearInformation }) => {
 
@@ -10,7 +11,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="user-information-form" onSubmit={handleSubmit}>
             <label htmlFor="experience">Training Experience</label>
             <select
 

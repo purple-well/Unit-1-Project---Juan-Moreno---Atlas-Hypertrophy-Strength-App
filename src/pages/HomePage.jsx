@@ -5,7 +5,12 @@ import "./HomePage.css";
 import howItWorks1 from "../assets/app-example1.png";
 import howItWorks2 from "../assets/app-example2.png";
 import howItWorks3 from "../assets/app-example3.png";
-import calendarIntegration from "../assets/calendar-integration.avif"
+import calendarIntegration from "../assets/calendar-integration.avif";
+import before1 from "../assets/before-after1.png";
+import before2 from "../assets/before-after2.png";
+import before3 from "../assets/before3.jpg";
+import before4 from "../assets/before4.jpg";
+import powerlifting from "../assets/powerlifting.jpg";
 
 function HomePage() {
     return (
@@ -32,10 +37,6 @@ function HomePage() {
                     </Link>
                 </section>
             </div>
-
-            <section className="app-preview">
-
-            </section>
 
             <section className="app-anywhere" >
                 <h2 className="introduction">Atlas Hypertrophy & Strength: Your Smart Training Guide</h2>
@@ -114,11 +115,57 @@ function HomePage() {
 
             <section className="call-to-action">
 
+                <h2>Tens of Thousands of People Have Achieved Thier Muscle Growth Goals With The Atlas Hypertrophy & Strength App</h2>
 
+                <div className="transformations">
+
+                    <div className="transformation">
+                        <div className="transformation-photo">
+                            <img src={before1} alt="Before training" />
+                            <p>Before</p>
+                        </div>
+
+                        <div className="transformation-photo">
+                            <img src={before2} alt="After training" />
+                            <p>After</p>
+                        </div>
+                    </div>
+
+                    <div className="transformation">
+                        <div className="transformation-photo">
+                            <img src={before4} alt="Before training" />
+                            <p>Before</p>
+                        </div>
+
+                        <div className="transformation-photo">
+                            <img src={before3} alt="After training" />
+                            <p>After</p>
+                        </div>
+                    </div>
+
+                </div>
 
             </section>
 
+            <section
+                className="final-call"
+                style={{ backgroundImage: `url(${powerlifting})` }}
+            >
+                <h2>What Are You Waiting For?</h2>
 
+                <p>Start building a workout designed around your goals.</p>
+
+                <Link className="generator-link" to="/generate">
+                    Generate a Workout
+                </Link>
+            </section>
+
+
+            <footer className="site-footer">
+                <p className="copyright">
+                    © 2026 Atlas Hypertrophy & Strength
+                </p>
+            </footer>
 
         </main>
     );
