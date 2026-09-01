@@ -1,3 +1,5 @@
+//Workout exercises organized into templates. 
+
 const workoutTemplates = [
     {
         type: "push",

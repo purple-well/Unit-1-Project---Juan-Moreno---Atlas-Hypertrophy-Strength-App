@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function GeneratorPage() {
+    //Initializes user information from localStorage if saved data already exists.
     const [userInformation, setUserInformation] = useState(() => {
         const savedInformation = localStorage.getItem("userInformation");
 
@@ -25,6 +26,7 @@ function GeneratorPage() {
 
     const [trainingPlan, setTrainingPlan] = useState([]);
 
+    //Saves updated user information to localStorage whenever the state changes. 
     useEffect(() => {
         localStorage.setItem(
             "userInformation",
@@ -32,6 +34,7 @@ function GeneratorPage() {
         );
     }, [userInformation]);
 
+    //Generates a new training plan from the submitted user information.
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -41,6 +44,7 @@ function GeneratorPage() {
 
     };
 
+    //Resets the form, generated plan and saved user information. 
     const handleClearInformation = () => {
         const emptyUserInformation = {
             experience: "",

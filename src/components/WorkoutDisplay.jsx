@@ -1,6 +1,7 @@
 import ExerciseItem from "./ExerciseItem";
 import "./WorkoutDisplay.css";
 
+//Prevents the training plan section from displaying until a workout has been generated.
 function WorkoutDisplay({ trainingPlan }) {
     if (trainingPlan.length === 0) {
         return null;
@@ -17,6 +18,7 @@ function WorkoutDisplay({ trainingPlan }) {
                     Take a look at your personalized 14-day training program:
                 </p>
 
+                {/*Creates a training day section for each day in the genrated training plan.*/}
                 <div className="training-days">
                     {trainingPlan.map((day) => (
                         <article className="training-day" key={day.day}>

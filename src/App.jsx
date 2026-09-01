@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import GeneratorPage from "./pages/GeneratorPage";
 
+//Defines routes for the app's home page and wokrout generator page.
 function App() {
   return (
     <Routes>
