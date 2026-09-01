@@ -1,8 +1,10 @@
 import Button from "./Button";
 import "./UserInformationForm.css";
 
+//UserInformationForm receives functions from the parent component through props. 
 const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit, handleClearInformation }) => {
 
+    //Updates the matching userInformation property whenever a form field changes. 
     const handleChange = (event) => {
         setUserInformation({
             ...userInformation,
@@ -83,7 +85,7 @@ const UserInformationForm = ({ userInformation, setUserInformation, handleSubmit
                 <option value="60 minutes">60 Minutes</option>
             </select>
 
-
+            {/* Button function from Button.jsx is being used twice here. */}
             <Button type="submit">
                 Generate Workout
             </Button>

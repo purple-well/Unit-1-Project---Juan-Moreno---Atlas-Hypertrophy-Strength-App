@@ -1,5 +1,6 @@
 import "./ExerciseItem.css";
 
+//The function will display exercises and number of sets depending on user input choices. 
 function ExerciseItem({ exercise }) {
     return (
         <li className="exercise-item">
