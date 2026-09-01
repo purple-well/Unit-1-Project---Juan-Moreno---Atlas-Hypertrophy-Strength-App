@@ -1,45 +1,41 @@
+import "./ExerciseItem.css";
+
 function ExerciseItem({ exercise }) {
     return (
-        <li>
+        <li className="exercise-item">
             <h3>{exercise.name}</h3>
 
-            <p>
+            <p className="exercise-prescription">
                 {exercise.sets} sets x {exercise.reps} reps
             </p>
 
-            <div>
+            <div className="exercise-sets">
                 <label>
                     <input type="checkbox" />
                     Set 1
                 </label>
-            </div>
 
-            {exercise.sets >= 2 && (
-                <div>
+                {exercise.sets >= 2 && (
                     <label>
                         <input type="checkbox" />
                         Set 2
                     </label>
-                </div>
-            )}
+                )}
 
-            {exercise.sets >= 3 && (
-                <div>
+                {exercise.sets >= 3 && (
                     <label>
                         <input type="checkbox" />
                         Set 3
                     </label>
-                </div>
-            )}
+                )}
 
-            {exercise.sets >= 4 && (
-                <div>
+                {exercise.sets >= 4 && (
                     <label>
                         <input type="checkbox" />
                         Set 4
                     </label>
-                </div>
-            )}
+                )}
+            </div>
         </li>
     );
 }

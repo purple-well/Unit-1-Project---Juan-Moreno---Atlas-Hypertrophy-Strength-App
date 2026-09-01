@@ -1,0 +1,292 @@
+.atlas-wordmark {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #d0d0d0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-background {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 80%,
+            rgba(255, 255, 255, 1) 100%),
+        url("../assets/hero-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.generator-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.hero {
+    padding: 150px clamp(30px, 10vw, 200px);
+    color: white;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero p {
+    max-width: 500px;
+}
+
+.app-anywhere {
+    padding: 80px 40px;
+}
+
+.showcase-images {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.showcase-main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.introduction {
+    padding: 30px 60px;
+
+}
+
+.generator-link:hover {
+    background-color: #d9d9d9;
+    transform: translateY(-2px);
+}
+
+.how-it-works {
+    padding: 80px 40px;
+    color: white
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: black
+}
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.how-it-works-card {
+    padding: 25px;
+    border-radius: 25px;
+    background-color: #1d1d1d;
+    text-align: center;
+}
+
+.how-it-works-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.how-it-works-card h3 {
+    margin-top: 25px;
+}
+
+.how-it-works-card p {
+    line-height: 1.6;
+}
+
+.calendar-feature {
+    padding: 80px 40px;
+}
+
+.calendar-showcase {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.calendar-integration {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.call-to-action {
+    padding: 80px 40px;
+}
+
+.call-to-action h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.transformations {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.transformation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.transformation-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.transformation-photo p {
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #171717;
+    color: white;
+}
+
+.final-call {
+    min-height: 500px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.final-call .generator-link {
+    margin-top: 20px;
+}
+
+.site-footer {
+    padding: 60px 60px 30px;
+    background-color: white;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-footer::before {
+    content: "";
+    display: block;
+    max-width: 1400px;
+    height: 1px;
+    margin: 0 auto 150px;
+    background-color: #d9d9d9;
+}
+
+@media (max-width: 900px) {
+    .how-it-works-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .hero {
+        padding: 120px 60px;
+    }
+
+    .app-anywhere,
+    .how-it-works,
+    .calendar-feature,
+    .call-to-action {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .transformation {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .atlas-wordmark {
+        width: 220px;
+    }
+
+    .site-header {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        padding: 100px 25px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .generator-link {
+        margin-top: 50px;
+    }
+
+    .app-anywhere,
+    .how-it-works,
+    .calendar-feature,
+    .call-to-action {
+        padding: 50px 20px;
+    }
+
+    .introduction {
+        padding: 20px 0;
+    }
+
+    .transformation {
+        gap: 15px;
+    }
+
+    .final-call {
+        min-height: 400px;
+        padding: 40px 20px;
+        background-attachment: scroll;
+    }
+
+    .site-footer {
+        padding: 40px 20px 20px;
+    }
+}
