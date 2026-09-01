@@ -1,0 +1,92 @@
+.workout-display {
+    margin-top: 80px;
+    padding: 80px 40px;
+    background-color: #f5f5f5;
+}
+
+.workout-display-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.workout-display-title {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.workout-display-subtitle {
+    margin: 10px 0 50px;
+    text-align: center;
+    color: #666;
+}
+
+.training-days {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.training-day {
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.day-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.exercise-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rest-day {
+    padding: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+.rest-day p {
+    margin: 0 0 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.rest-day span {
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    .exercise-list {
+        grid-template-columns: 1fr;
+    }
+
+    .workout-display {
+        padding: 60px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .workout-display {
+        padding: 40px 20px;
+    }
+
+    .training-day {
+        padding: 20px;
+    }
+
+    .workout-display-title {
+        font-size: 2rem;
+    }
+}
