@@ -62,7 +62,7 @@ function GeneratorPage() {
     return (
         <>
             <header className="generator-page">
-                <Link classname="home-link" to="/">
+                <Link className="home-link" to="/">
                     <h1 className="generator-title">Atlas Hypertrophy & Strength</h1>
                 </Link>
             </header>
